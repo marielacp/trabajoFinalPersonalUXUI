@@ -1,0 +1,139 @@
+*{
+
+  margin:0px;
+  padding: 0px;
+}
+ header{
+   height: 100px;
+   width: 90%;
+ }
+ img{
+   width: 20%;
+   margin: auto;
+   display: block;
+ }
+.bars{
+float: right;
+font-size: 40px;
+/*outline: 1px solid red;*/
+position: relative;
+top:-80px;
+
+ }
+ul{
+  list-style: none;
+}
+
+.disabled-menu{
+display: none;
+}
+
+
+.enabled-menu{
+display: block;
+}
+
+.section-gray{
+/*outline:1px solid red;*/
+
+height: 100px;
+background-color: #e2e4e6;
+}
+.selections{
+  border: none;
+  background-color: #e2e4e6;
+  margin-left: 100px;
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.container-subtitle{
+  overflow: auto;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.subtitle{
+  float: left;
+  margin-left: 20px;
+}
+.results{
+  background-color: #f7f7f7;
+  /*outline:1px solid red;*/
+  height: 900px;
+}
+.container{
+margin-left: 30px;
+padding-top: 30px;
+text-align: center;
+}
+.container .box{
+
+  height: 450px;
+  width: 28%;
+  background-color: #ffffff;
+  float: left;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* se adiciono desertores y , margin MARIELA*/
+.box h1{
+display: block;
+
+}
+
+.title{
+padding:15px;
+/*outline:1px solid red;*/
+display: inline-block;
+}
+    .total-students, .desertores, .cantDesertores, .cantDesertoresTotal{
+  float: left;
+  height: 70px;
+  width: 120px;
+  background-color: #e2e4e6;
+  margin: 2%;
+  text-align: center;
+ 
+}
+
+/*estilo a las cajas de la seccion nps*/
+.total-nps, .seccion-nps{
+  height: 70px;
+  width: 120px;
+  background-color: #e2e4e6;
+  float: left;
+  margin-left: 20px;
+}
+
+.promoters, .passive,.detractors {
+height: 20px;
+width: 120px;
+background-color: #e2e4e6;
+}
+
+
+/*añadiendo actualizaciones 2filtroMariela*/
+
+/*3era pregunta*/
+.filter2{
+height: 70px;
+width: 120px;
+background-color: #e2e4e6;
+/*float: left;*/
+margin-left: 20px;
+text-align: center;
+font-size: 10px;
+}
+.filtertxt{
+  font-size: 12px;
+}
+.img{
+width: 300px;
+height: auto;
+}
+.grafic{
+margin-top:100px;
+width: 300px; 
+height: 100px;
+
+}

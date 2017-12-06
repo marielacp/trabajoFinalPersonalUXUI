@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Dashboard</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+    <img src="assets/images/logo-laboratoria.svg" alt="">
+    <div id="bars"class="bars">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <nav id ="options-menu"class="disabled-menu">
+        <ul>
+          <li>Add student</li>
+          <li>Remove student</li>
+          <li>Add sprint</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class = 'section-gray'>
+    <select id="selection" name="" class="selections">
+      <option value="">Identifica la sede-generacion</option>
+      <option value="AQP-2016-2">AREQUIPA-2016-2</option>
+      <option value="AQP-2017-1">AREQUIPA-2017-1</option>
+      <option value="CDMX-2017-1">MEXICO-2017-1</option>
+      <option value="CDMX-2017-2">MEXICO-2017-2</option>
+      <!--sede Lima-->
+      <option value="LIM-2016-2">LIMA-2016-2</option>
+      <option value="LIM-2017-1">LIMA-2017-1</option>
+      <option value="LIM-2017-2">LIMA-2017-2</option>
+      <!--sede chile-->
+      <option value="SCL-2016-2">SANTIAGO DE CHILE-2016-2</option>
+      <option value="SCL-2017-1">SANTIAGO DE CHILE-2017-1</option>
+      <option value="SCL-2017-2">SANTIAGO DE CHILE-2017-2</option>
+    </select>
+    <div class="container-subtitle">
+        <p class="subtitle">OVERVIEW</p>
+        <p class="subtitle">STUDENTS</p>
+        <p class="subtitle">TEACHERS</p>
+    </div>
+  </section>
+
+  <section class= "results">
+    <div class="container">
+
+      <div class="box">
+        <h1 class = "title">ENROLLMENT</h1>
+        <div id="total-students" class="total-students">
+          <p># de studiantes inscritos</p>
+        </div>
+<!--inicio Mariela-->
+        <div class="desertores" id="containerFilter2"> 
+        <p>% DROPOUT</p>
+        </div>        
+  <!--   <figure>
+       <img class= "img" src="assets/images/bar-graph.png" alt="">
+        </figure>-->
+        <div id="columnchart_values" class="grafic"></div>
+            
+    
+</div>
+      <div class="box" >
+        <h1 class = "title">ACHIEVEMENT</h1>
+      <div class="cantDesertores" id="containerFilter3">
+      <p>STUDENTS THAT MEER THE TARGET</p>
+<figure>
+  <img class="img" src="assets/images/bar-graph.png" alt="">
+</figure>
+</div>
+<div class="cantDesertoresTotal" id="containerFilter4">
+  <p>% OF TOTAL</p>
+</div>
+</div>
+<!--fin-->
+      <div class="box">
+        <h1 class = "title">NET PROMOTERS SCORE</h1>
+          <div id="total-nps" class="total-nps">
+            <p>% NPS</p>
+          </div>
+          <div id="seccion-nps" class="seccion-nps">
+           <div id ="promoters" class ="promoters"><p> Promotores</p></div>       
+           <div id="passive" class="passive"><p> Pasivos</p></div>      
+           <div id= "detractors" class = "detractors"><p> Detractores</p></div>                    
+          </div>
+<img class="img" src="assets/images/graph.png" alt="">
+      </div>
+      <div class="box">
+        <h1 class = "title">Student Satisfaction</h1>
+        <div id="containerFilter5">
+          <p># de studiantes inscritos</p>
+        </div>
+        <div> </div>
+        <div></div>
+<img class="img" src="assets/images/graph.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- Base de datos -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="js/graficos.js" ></script> 
+  
+		<script src="js/data.js"></script>
+
+		<!-- Aquí va tus archivos JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

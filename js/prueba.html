@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tutorial Monsters: Mi primer ejemplo en Google Charts</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script>
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(dibujarGrafico);
+        function dibujarGrafico() {
+            // Tabla de datos: valores y etiquetas de la gráfica
+            var data = google.visualization.arrayToDataTable([
+                ['Texto', 'Valor numérico'],
+                ['Texto1', 20.21],
+                ['Texto2', 4.28],
+                ['Texto3', 17.26],
+                ['Texto4', 10.25]
+            ]);
+            var options = {
+                title: 'Ejemplo con Google Charts: Gráfico de barras'
+            }
+            // Dibujar el gráfico
+            new google.visualization.ColumnChart(
+                //ColumnChart sería el tipo de gráfico a dibujar
+                document.getElementById('GraficoGoogleChart-ejemplo-1')
+            ).draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    Ejemplo con Google Charts....
+    <div id="GraficoGoogleChart-ejemplo-1" style="width: 800px; height: 600px">
+    </div>
+    <div style="padding-top:15px">
+        <a href="http://www.tutorialmonsters.com/google-charts-graficas-en-tu-web/" title="Google Charts">www.tutorialmonsters.com</a>
+    </div>
+</body>
+
+</html>
